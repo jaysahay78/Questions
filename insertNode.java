@@ -1,5 +1,3 @@
-package com.company;
-
 public class insertNode {
     public static void main(String[] args) {
         TreeNode root = new TreeNode(4);

@@ -1,5 +1,3 @@
-package com.company;
-
 import java.util.*;
 
 class Tuple {
@@ -37,10 +35,8 @@ public class VerticalOrderTraversal {
             int y = tuple.col;
 
             if (!map.containsKey(x)){
-                map.put(x, new TreeMap<>()); //for outer treemap int x key gives the value of the inner map
             }
             if (!map.get(x).containsKey(y)){
-                map.get(x).put(y, new PriorityQueue<>()); // for the inner treemap int y key gives the value of the tq
             }
             map.get(x).get(y).offer(node.val);
 

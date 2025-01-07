@@ -1,5 +1,3 @@
-package com.company;
-
 public class MaxDepth {
     public static void main(String[] args) {
         TreeNode root1 = new TreeNode(1);
@@ -17,6 +15,5 @@ public class MaxDepth {
         int lh = treeHeight(root.left);
         int rh = treeHeight(root.right);
         return 1 + Math.max(lh, rh);
-
     }
 }

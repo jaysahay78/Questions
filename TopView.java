@@ -1,5 +1,3 @@
-package com.company;
-import javafx.util.*;
 import java.util.*;
 
 public class TopView {
