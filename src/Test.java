@@ -1,6 +1,11 @@
+import java.util.HashSet;
+import java.util.Set;
+
 public class Test {
+
     public static void main(String[] args) {
-        String s = "abcde";
-        System.out.println(s.substring(1,4));
+        String s = "hello";
+        String t = "hello";
+
     }
 }
