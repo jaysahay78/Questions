@@ -5,8 +5,5 @@ public class Test {
         String s = "hello";
         int low = 2;
         int high = 2;
-        if (low )
-        String pal = s.substring(low, high+1);
-        System.out.println(pal);
     }
 }
