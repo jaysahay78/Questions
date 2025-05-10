@@ -1,12 +1,44 @@
 import java.util.Arrays;
-public class Test {
-    public static void main(String[] args) {
-        Node n4 = new Node(4);
-        Node n3 = new Node(3, n4);
-        Node n2 = new Node(2, n3);
-        Node n1 = new Node(1,n2);
-        n2=n3;
+import java.util.Scanner;
 
-        System.out.println(n1.next.data);
+public class Test {
+    static int testfunc(int n, int[] nums){
+    int candidate = -1, count = 0;
+
+    // Phase 1: Find a potential majority candidate
+    for (int num : nums) {
+        if (count == 0) {
+            candidate = num;
+            count = 1;
+        } else if (num == candidate) {
+            count++;
+        } else {
+            count--;
+        }
+    }
+
+    // Phase 2: Verify the candidate by counting its occurrences
+    count = 0;
+    for (int num : nums) {
+        if (num == candidate) {
+            count++;
+        }
+    }
+
+    // Return the candidate if it's a valid majority element
+    if (count > n / 2) {
+        return candidate;
+    } else {
+        return -1;
+    }
+}
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+        int nums[] = new int[N];
+        for (int i = 0; i < N; i++) {
+            nums[i] = sc.nextInt();
+        }
+        System.out.println(testfunc(N, nums));
     }
 }
