@@ -1,9 +1,6 @@
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Scanner;
-
-public class Test {
-    static int nodeNumber(ListNode head) {
+public class DeleteMiddle {
+    static ListNode deleteMiddle(ListNode head) {
+        if(head == null || head.next == null) return null;
         ListNode slow = head;
         ListNode fast = head;
         ListNode prev = null;
@@ -12,11 +9,11 @@ public class Test {
             slow= slow.next;
             fast = fast.next.next;
         }
-        return 1/2;
+        if(prev.next != null) prev.next = slow.next;
+        return head;
     }
+
     public static void main(String[] args) {
-        int[] arr = {1,2};
-        ListNode head = ConvertToLL.convertArrtoLL(arr);
-        System.out.println(nodeNumber(head));
+
     }
 }
