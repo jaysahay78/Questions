@@ -1,5 +1,5 @@
 public class ConvertToLL {
-    static ListNode convertArrtoLL(int[] arr) {
+    public static ListNode convertArrtoLL(int[] arr) {
         int n = arr.length;
         ListNode head= new ListNode(arr[0]);
         ListNode mover=head;
