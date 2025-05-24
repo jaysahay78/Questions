@@ -3,20 +3,8 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class Test {
-    static int nodeNumber(ListNode head) {
-        ListNode slow = head;
-        ListNode fast = head;
-        ListNode prev = null;
-        while(fast != null && fast.next != null){
-            prev = slow;
-            slow= slow.next;
-            fast = fast.next.next;
-        }
-        return 1/2;
-    }
     public static void main(String[] args) {
-        int[] arr = {1,2};
-        ListNode head = ConvertToLL.convertArrtoLL(arr);
-        System.out.println(nodeNumber(head));
+        ListNode low = new ListNode(1);
+        low.next = new ListNode(2);
     }
 }
