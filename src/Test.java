@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class Test {
     public static void main(String[] args) {
-        int n = Integer.MIN_VALUE;
+        int n = 1000000007;
+        
         System.out.println(n);
     }
 }

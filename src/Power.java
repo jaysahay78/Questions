@@ -16,7 +16,6 @@ public class Power {
         if(n<0) ans = (double)1/ (double)ans;
         return ans;
     }
-
     public static void main(String[] args) {
         System.out.println(myPow(2,-200000000));
     }
