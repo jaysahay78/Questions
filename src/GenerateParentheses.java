@@ -6,6 +6,8 @@ public class GenerateParentheses {
         List<String> result = new ArrayList<>();
         generate(result, 0,0,"", n);
         return result;
+        int[] arr = {1,2,3,4,5};
+        int a = arr.length;
     }
     static void generate(List<String> list, int open, int close, String unpr, int n){
         if(unpr.length() == 2*n){
