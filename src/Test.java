@@ -1,12 +1,14 @@
 import java.util.*;
 
 public class Test {
-    public static void main(String[] args) {
-        List<String> list = new ArrayList<>();
-        List<String> list1 = new ArrayList<>();
-        list.add("hello");
-        list1.add("world");
+    static void test(String str) {
+    }
 
-        System.out.println(list1);
+    public static void main(String[] args) {
+        String digits = "23";
+        String[] arr = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+        String s = arr[digits.charAt(0) - '0'];
+        System.out.println(s);
+        StringBuilder sb = new StringBuilder();
     }
 }
