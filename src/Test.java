@@ -5,10 +5,8 @@ public class Test {
     }
 
     public static void main(String[] args) {
-        String digits = "23";
-        String[] arr = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
-        String s = arr[digits.charAt(0) - '0'];
-        System.out.println(s);
-        StringBuilder sb = new StringBuilder();
+        String s = "aabb";
+        String b = String.valueOf(s.charAt(2));
+        System.out.println(s.substring(0,1));
     }
 }
