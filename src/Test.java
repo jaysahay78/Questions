@@ -3,11 +3,10 @@ import java.util.LinkedList;
 
 public class Test {
     public static void main(String[] args) {
-        String s = "hello";
-        Stack<Character> st = new Stack<>();
-        st.push('a');
-        st.pop();
-
-
+        Deque<Integer> dq = new LinkedList<>();
+        dq.add(1);
+        dq.add(2);
+        dq.add(3);
+        System.out.println(dq.peekFirst());
     }
 }
