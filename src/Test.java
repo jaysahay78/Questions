@@ -11,6 +11,5 @@ public class Test {
         HashMap<Character, Integer> map = new HashMap<>();
         map.put('a', 1);
         String s = "hello";
-        s.le
     }
 }
