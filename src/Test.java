@@ -8,5 +8,9 @@ public class Test {
         dq.add(2);
         dq.add(3);
         System.out.println(dq.peekFirst());
+        HashMap<Character, Integer> map = new HashMap<>();
+        map.put('a', 1);
+        String s = "hello";
+        s.le
     }
 }
