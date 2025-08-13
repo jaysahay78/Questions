@@ -6,6 +6,6 @@ public class Test {
         String s = "bbc";
         int a = s.charAt(0) - 'a';
         System.out.println(a);
-        int a  = Math.min(2,3,4);
+        
     }
 }
