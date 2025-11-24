@@ -2,6 +2,10 @@ class Solution {
     public int minimumTotal(List<List<Integer>> triangle) {
         int n = triangle.size();
         int[][] dp = new int[n][n];
+        // for(int[] arr : dp){
+        //     Arrays.fill(arr, -1);
+        // }
+        // return func(0, 0, triangle, dp);
         for(int j=0; j<n; j++){
             dp[n-1][j] = triangle.get(n-1).get(j);
         }
@@ -16,11 +20,11 @@ class Solution {
         return dp[0][0];
     }
     // public int func(int i, int j, List<List<Integer>> list, int[][] dp){
-    //     if(i== list.size()-1) return list.get(i).get(j);
+    //     if(i >= list.size() || j>=i+1) return 0;
     //     if(dp[i][j] != -1) return dp[i][j];
+    //     if(i<0 && j<0) return Integer.MAX_VALUE;
 
-    //     int same = func(i+1, j, list, dp);
-    //     int next = func(i+1, j+1, list, dp);
-    //     return dp[i][j] = list.get(i).get(j) + Math.min(same, next);
+    //     int curr = list.get(i).get(j);
+    //     return dp[i][j] = curr + Math.min(func(i+1, j, list, dp), func(i+1, j+1, list, dp));
     // }
 }
